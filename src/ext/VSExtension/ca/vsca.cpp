@@ -76,7 +76,7 @@ extern "C" UINT __stdcall FindInstances(
     HRESULT hr = S_OK;
     UINT er = ERROR_SUCCESS;
     BOOL fComInitialized = FALSE;
-    ISetupConfiguration* pConfiguration = NULL;
+    ISetupConfiguration2* pConfiguration = NULL;
     ISetupHelper* pHelper = NULL;
     IEnumSetupInstances* pEnumInstances = NULL;
     ISetupInstance* rgpInstances[1] = {};
