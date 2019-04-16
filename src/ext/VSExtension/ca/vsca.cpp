@@ -115,7 +115,7 @@ extern "C" UINT __stdcall FindInstances(
         hr = S_OK;
     }
 
-    hr = pConfiguration->EnumInstances(&pEnumInstances);
+    hr = pConfiguration->EnumAllInstances(&pEnumInstances);
     ExitOnFailure(hr, "Failed to get instance enumerator.");
 
     do
